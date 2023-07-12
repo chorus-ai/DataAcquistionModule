@@ -1,7 +1,6 @@
 name: New Progress Tracker
 description: Create a progress tracker for a B2AI site.
 title: "[Progress Tracker]: "
-# labels: []
 body:
   - type: input
     id: site
