@@ -1,1 +1,42 @@
-
+name: New Progress Tracker
+description: Create a progress tracker for a B2AI site.
+title: "[Progress Tracker]: "
+labels: []
+body:
+  - type: input
+    id: site
+    attributes:
+      label: Data Contributing Site
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Site Main Contact
+    validations: 
+      required: true
+  - type: textarea
+    id: etl-rep
+    attributes:
+      label: ETL Representatives
+    validations: 
+      required: true
+  - type: dropdown
+    id: classification
+    attributes:
+      label: Site Classification
+      options:
+        - Started w/OMOP instance
+        - Started w/version of CDM that can be moved 
+        - Did not start w/OMOP instance
+    validations:
+      required: true
+  - type: checkboxes
+    id: Data Classification Type
+    attributes:
+      label: What types of data is this site contributing?
+      options:
+        - label: EHR Data
+        - label: Flowsheets
+        - label: Waveform Data
+        - label: Image Data
