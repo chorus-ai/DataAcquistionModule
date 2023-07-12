@@ -47,43 +47,37 @@ body:
       options:
         - label: Has data been submitted?
   - type: input
-    attributes:
-      label: Date of Data Submission
+    label: Date of Data Submission
   - type: checkboxes
     attributes:
       options:
         - label: Has ETL been completed?
   - type: input
-    attributes:
-      label: Date of ETL completion
+    label: Date of ETL completion
   - type: checkboxes
     attributes:
       options:
         - label: Has Data Quality Dashboard (DQD) been run on your OMOP instance?
   - type: input
-    attributes:
-      label: Date of DQD run
+    label: Date of DQD run
   - type: checkboxes
     attributes:
       options:
         - label: Have the Data Quality Dashboard (DQD) results been submitted?
   - type: input
-    attributes:
-      label: Date of DQD results submission
+    label: Date of DQD results submission
   - type: checkboxes
     attributes:
       options:
         - label: Has Achilles been run on your OMOP instance?
   - type: input
-    attributes:
-      label: Date of Achilles run
+    label: Date of Achilles run
   - type: checkboxes
     attributes:
       options:
         - label: Have the Achilles results been submitted?
   - type: input
-    attributes:
-      label: Date of Achilles results submission
+    label: Date of Achilles results submission
   - type: checkboxes
     attributes:
       options:
