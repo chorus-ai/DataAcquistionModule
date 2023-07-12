@@ -26,9 +26,9 @@ body:
     attributes:
       label: Site Classification
       options:
-        - Started w/OMOP instance
-        - Started w/version of CDM that can be moved 
-        - Did not start w/OMOP instance
+        - Started with OMOP instance
+        - Started with version of CDM that can be moved 
+        - Did not start with OMOP instance
     validations:
       required: true
   - type: checkboxes
