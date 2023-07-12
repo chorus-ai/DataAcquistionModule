@@ -45,9 +45,6 @@ body:
   - type: markdown
     attributes:
       value: "# Site TODO:"
-  - type: markdown
-    attributes:
-      value: "<br>"
   - type: checkboxes
     attributes:
       label: Data Submission
@@ -56,6 +53,9 @@ body:
   - type: input
     attributes:
       label: Date of Data Submission
+  - type: markdown
+    attributes:
+      value: "<br>"
   - type: checkboxes
     attributes:
       label: ETL Completion
@@ -64,6 +64,9 @@ body:
   - type: input
     attributes:
       label: Date of ETL completion
+  - type: markdown
+    attributes:
+      value: "<br>"
   - type: checkboxes
     attributes:
       label: Data Quality Dashboard (DQD) Execution
@@ -72,6 +75,9 @@ body:
   - type: input
     attributes:
       label: Date of DQD run
+  - type: markdown
+    attributes:
+      value: "<br>"
   - type: checkboxes
     attributes:
       label: Data Quality Dashboard (DQD) Submission
@@ -80,6 +86,9 @@ body:
   - type: input
     attributes:
       label: Date of DQD results submission
+  - type: markdown
+    attributes:
+      value: "<br>"
   - type: checkboxes
     attributes:
       label: Achilles Execution
@@ -88,6 +97,9 @@ body:
   - type: input
     attributes:
       label: Date of Achilles run
+  - type: markdown
+    attributes:
+      value: "<br>"
   - type: checkboxes
     attributes:
       label: Achilles Submission
@@ -96,6 +108,9 @@ body:
   - type: input
     attributes:
       label: Date of Achilles results submission
+  - type: markdown
+    attributes:
+      value: "<br>"
   - type: checkboxes
     attributes:
       label: Flowsheet data
