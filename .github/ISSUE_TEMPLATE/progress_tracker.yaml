@@ -44,55 +44,57 @@ body:
       value: "## Site TODO:"
   - type: checkboxes
     attributes:
-      label: data-submit
+      label: Data Submission
       options:
         - label: Has data been submitted?
   - type: input
     attributes:
       label: Date of Data Submission
-  # - type: checkboxes
-  #   attributes:
-  #     options:
-  #       - label: Has ETL been completed?
-  # - type: input
-  #   label: Date of ETL completion
-  # - type: checkboxes
-  #   attributes:
-  #     options:
-  #       - label: Has Data Quality Dashboard (DQD) been run on your OMOP instance?
-  # - type: input
-  #   label: Date of DQD run
-  # - type: checkboxes
-  #   attributes:
-  #     options:
-  #       - label: Have the Data Quality Dashboard (DQD) results been submitted?
-  # - type: input
-  #   label: Date of DQD results submission
-  # - type: checkboxes
-  #   attributes:
-  #     options:
-  #       - label: Has Achilles been run on your OMOP instance?
-  # - type: input
-  #   label: Date of Achilles run
-  # - type: checkboxes
-  #   attributes:
-  #     options:
-  #       - label: Have the Achilles results been submitted?
-  # - type: input
-  #   label: Date of Achilles results submission
-  # - type: checkboxes
-  #   attributes:
-  #     options:
-  #       - label: Has flowsheet data been identified?
-  # - type: checkboxes
-  #   attributes:
-  #     options:
-  #       - label: Has flowsheet format been identified?
-  # - type: checkboxes
-  #   attributes:
-  #     options:
-  #       - label: Has site begun mapping process?
-  # - type: checkboxes
-  #   attributes:
-  #     options:
-  #       - label: Has Standards Module reviewed flowsheet mappings?
+  - type: checkboxes
+    attributes:
+      label: ETL Completion
+      options:
+        - label: Has ETL been completed?
+  - type: input
+    attributes:
+      label: Date of ETL completion
+  - type: checkboxes
+    attributes:
+      label: Data Quality Dashboard (DQD) Execution
+      options:
+        - label: Has Data Quality Dashboard (DQD) been run on your OMOP instance?
+  - type: input
+    attributes:
+      label: Date of DQD run
+  - type: checkboxes
+    attributes:
+      label: Data Quality Dashboard (DQD) Submission
+      options:
+        - label: Have the Data Quality Dashboard (DQD) results been submitted?
+  - type: input
+    attributes:
+      label: Date of DQD results submission
+  - type: checkboxes
+    attributes:
+      label: Achilles Execution
+      options:
+        - label: Has Achilles been run on your OMOP instance?
+  - type: input
+    attributes:
+      label: Date of Achilles run
+  - type: checkboxes
+    attributes:
+      label: Achilles Submission
+      options:
+        - label: Have the Achilles results been submitted?
+  - type: input
+    attributes:
+      label: Date of Achilles results submission
+  - type: checkboxes
+    attributes:
+      label: Flowsheet data
+      options:
+        - label: Has flowsheet data been identified?
+        - label: Has flowsheet format been identified?
+        - label: Has site begun mapping process?
+        - label: Has Standards Module reviewed flowsheet mappings?
