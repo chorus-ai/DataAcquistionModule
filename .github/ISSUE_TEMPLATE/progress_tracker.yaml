@@ -31,9 +31,9 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: Data Classification Type
+    id: classification
     attributes:
-      label: What types of data is this site contributing?
+      label: Data Classification Type?
       options:
         - label: EHR Data
         - label: Flowsheets
