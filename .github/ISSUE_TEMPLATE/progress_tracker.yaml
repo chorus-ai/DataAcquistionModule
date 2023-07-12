@@ -44,10 +44,12 @@ body:
       value: "## Site TODO:"
   - type: checkboxes
     attributes:
+      label: data-submit
       options:
         - label: Has data been submitted?
   - type: input
-    label: Date of Data Submission
+    attributes:
+      label: Date of Data Submission
   # - type: checkboxes
   #   attributes:
   #     options:
