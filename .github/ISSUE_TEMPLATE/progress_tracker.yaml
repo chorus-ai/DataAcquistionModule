@@ -41,7 +41,13 @@ body:
         - label: Image Data
   - type: markdown
     attributes:
-      value: "<br># Site TODO:<br>"
+      value: "<br>"
+  - type: markdown
+    attributes:
+      value: "# Site TODO:"
+  - type: markdown
+    attributes:
+      value: "<br>"
   - type: checkboxes
     attributes:
       label: Data Submission
