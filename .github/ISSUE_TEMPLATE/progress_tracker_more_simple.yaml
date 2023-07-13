@@ -45,7 +45,7 @@ body:
       value: "<br>"
   - type: checkboxes
     attributes:
-      label: Site TODO:
+      label: "Site TODO:"
       options:
         - label: Has data been submitted?
         - label: Has ETL been completed?
