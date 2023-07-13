@@ -1,7 +1,7 @@
 name: New Progress Tracker
 description: Create a progress tracker for a B2AI site.
 title: "[Progress Tracker]: "
-projects: "Standards Module Progress Tracker"
+projects: "https://github.com/orgs/bridge2ai/projects/3"
 body:
   - type: input
     id: site
