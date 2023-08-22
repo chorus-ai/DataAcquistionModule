@@ -31,3 +31,8 @@ Create proposed code mappings - doubts about "proposed"
 
 ## Heidi:
 See email from Marty with commented word documents attached.
+
+## Notes:
+### Overlapping suggestions ("greatest hits"):
+ - Both Dan and Heidi suggested that we elaborate on **"OHDSI Tool Stack"**. Polina also asked "How can sites verify that they have installed everything?
+ - Maybe an appendix or additional sections in the README to flesh out some of the concepts that are introduced in the overview. It seems like both reviewers are getting stuck on certain terms in the high-level overview. Some link from the term in the overview to a more detailed description could help with that.
