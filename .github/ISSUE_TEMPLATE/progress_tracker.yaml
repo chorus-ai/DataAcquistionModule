@@ -57,7 +57,31 @@ body:
   - type: markdown
     attributes:
       value: "<br>"
+  - type: markdown
+    attributes:
+      value: "## Data Mapping"
   - type: checkboxes
+    attributes:
+      label: Have you prioritized data for mapping?
+      options:
+        - label: "Yes"
+        - label: "No"
+  - type: checkboxes
+    id: prioritize-data-mapping
+    attributes:
+      label: Do you have source codes that do not map to OMOP standards?
+      options:
+        - label: "Yes"
+        - label: "No"
+  - type: checkboxes
+    id: unmapped-source-codes
+    attributes:
+      label: Do you store mapping precision metadata?
+      options:
+        - label: "Yes"
+        - label: "No"
+  - type: checkboxes
+    id: mapping-precision-metadata
     attributes:
       label: ETL Completion
       options:
@@ -118,5 +142,5 @@ body:
       options:
         - label: Has flowsheet data been identified?
         - label: Has flowsheet format been identified?
-        - label: Has site begun mapping process?
+        - label: Has the site begun mapping process?
         - label: Has Standards Module reviewed flowsheet mappings?

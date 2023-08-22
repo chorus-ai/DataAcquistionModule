@@ -3,31 +3,46 @@
 ## Checklist/Progress Tracking/ Discussions Framework
 
 ### Purpose
-This framework provides an integrated solution for:
-
-- A structured "to-do list" for sites
-- A "workspace" for sites to track their own progress, keep notes, and reach out to the Standards Module (SM) for assistance
-- A project management tool for SM to visualize multiple sites' progress and/or friction points
-
+The CHoRUS Bridge2AI Standards Module is designed to offer a comprehensive platform for efficient project management and communication. 
+Our framework enables you to:
+* Organize tasks with a structured **to-do list** for sites.
+* Create a **workspace** where sites can monitor their progress, keep notes, and reach out to the Standards Module (SM) for assistance.
+* Equip the SM with tools for overseeing the progress and challenges of multiple sites at once.
+  
 ### Overview
 This framework solves three problems for the SM and the Bridge2AI contributing sites:
-1) SM seeks to provide sites with a detailed checklist of tasks involved in the ETL development, use of OHDSI tools, and concept mapping necessary to contribute data to CHoRUS Bridge2AI.
-2) SM needs to understand the overall and individual status of sites' progress in order to better tailor support to the entire group and specific sites.
-3) SM wants to host a discussion board/ forum where sites can post questions or present topics for discussion with other sites and SM simultaneously.
+1) **Task guidance**: SM seeks to provide sites with a detailed checklist of tasks involved in the ETL development, use of OHDSI tools, and concept mapping necessary to contribute data to CHoRUS Bridge2AI.
+2) **Progress monitoring**: SM needs to understand the overall and individual status of sites' progress in order to better tailor support to the entire group and specific sites.
+3) **Discussion platform**: SM wants to host a discussion board or forum where sites can post questions or present topics for discussion with other sites and SM simultaneously.
 
-Standards Module provides sites with detailed checklists to "map" the path from source data to OMOP CDM database. These checklists should help demystify the core processes of 1) Developing an OMOP ETL and standing up the required computational infrastructure, 2) Standing up the OHDSI toolstack to extract standardized quality and characterization information, and subsequently sharing quality and characterization information with SM, and 3) The selection and mapping of a subset of relevant source concepts to the OMOP Vocabulary.
-
-To know how best to support sites, SM needs to understand where sites are in their OMOP transformation progress, and where they are meeting friction. By making sites' checklists visible to the SM, checklists serve the second purpose of providing a window into sites' progress. This allows SM to tailor their support to each site's individual needs, as well as create content for all sites that addresses issues that multiple sites may be facing.
-
-The final benefit of sites utilizing the checklist/progress tracker in GitHub (as opposed to adhoc, site-specific project management methods) is the integration with GitHub Discussions. GitHub Discussions offers a collaborative forum for sites to post questions and receive answers from SM or other sites. It integrates well with the GitHub issue tracker, which allows this framework to connect discussions to issues in the Progress Tracker or Checklist issues, or even create new discussion topics from a question that a site posted on their own Progress Tracker or checklist.
+To address these challenges, the SM introduces the following solutions:
+1) **Detailed checklists**: The SM provides detailed checklists to guide sites through the entire process of transforming source data into an OMOP CDM database. These checklists are designed to clarify the core procedures of:
+    * Developing an OMOP ETL and setting up the necessary computational infrastructure
+    * Implementing the OHDSI toolstack to extract standardized quality and characterization information, and then sharing this information with the SM
+    * Selecting and mapping a subset of relevant source concepts to the OMOP Vocabulary
+2) **Progress tracking**: SM makes sites' checklists accessible to understand their OMOP transformation progress and challenges. This visibility enables tailored support for each site and content addressing common issues.
+3) **Discussion forum integration**: The framework integrates with GitHub Discussions, offering a platform for sites to post questions and receive answers from SM or other sites. This integration connects discussions to issues in the Progress Tracker or Checklist and allows the creation of new topics from posted questions.
 
 ### Site Instructions
-Each site has four issues in the tracker with their site's name attachedto them, they are: Complete ETL, Results Sharing, Flowsheets, and Progress Tracker. The first three issues ("milestone issues") contain detailed checklists for how to complete each essential part of the Bridge2AI data submission process. The milestone issues are each linked to a single milestone. The milestone has a due date and displays the percent of completed issues. This is mostly a feature of progress tracking. The fourth issue is the Progress Tracker. This can be thought of as a "landing page" for a site. In the initial comment, there is a brief site profile and a very high-level TO-DO list which links to the GitHub Discussions page and to the three other issues. The progress tracker issue is linked to a project, which has many attributes associated with a site's specific progress (date of data submission, status of work related to Achilles, etc.)
+This framework uses a progress tracking system categorized into two main categories, each containing issues attached to each site's name:
+1) **Milestone issues** (**Complete ETL**, **Results Sharing**, **Flowsheets**): these issues come with detailed checklists for essential steps in the Bridge2AI data submission process. Each issue is connected to a single milestone with a due date and a progress percentage display.
+2) **Progress Tracker issue**: this single issue serves as the central hub for tracking a site's progress:
+    * Serves as a landing page for each site.
+    * Includes a site profile and high-level to-do list.
+    * Offers links to the GitHub Discussions page and the three milestone issues.
+    * Is associated with a project that tracks specific progress attributes (e.g., data submission date, Achilles work status, etc.).
 
-The amount of benefits a site will derive from this framework directly relate to the amount with which they engage. To begin to see the benefits of this framework, sites should nominate one or more representatives to begin tracking their own progress using the checklists. Accurately representing a site's own progress by simply checking boxes of what has been completed will provide a world of insight to the SM.
+### Engagement and Benefits
+The benefits a site gains from this framework are directly related to its level of engagement.
+Here's how to get the most from the framework:
 
-To take things further, sites should begin leaving comments directly on the issue at a regular frequency (weekly or bi-weekly), or more frequently whenever they encounter road blocks. Comments, whether they simply reflect that everything is moving smoothly, or that progress is slowed for reasons beyond a site's control, or that the whole team is confused by a concept and requires expert input, are useful feedback that the SM needs in order to know how to best support the group.
+1. **Progress tracking**: sites should assign representatives to track their progress using the checklists. Regularly updating the checklists provides valuable insights to the SM.
+2. **Regular comments**: sites should leave comments on the issues at regular intervals (weekly or bi-weekly) or whenever encountering challenges. These comments help SM provide tailored support.
+3. **Status labels**: sites should use the issue labels to report their status. Labels include:  
+    * **Blocked**: indicates that a site cannot proceed with work. Comments can specify whether the blockage is external or something the SM can assist with.
+    * **Help Wanted**: signals that a site needs SM assistance. The reason for help can be explained in a comment.
+    * **Under Review**: marks that a site has requested feedback and progress is paused until feedback is received.
+    
+Using these labels in conjunction with comments helps the SM understand a site's current situation and support needs.
 
-A final way to use these issues is for a site to report their status using the "labels" feature. All four of the issue types have labels for "Blocked", "Help Wanted", and "Under Review". Making use of these labels in tandem with comments sends a clear signal to the SM of what a site's "status" is and if or what they are expecting for feedback. For example, using the "Blocked" label sends a message that a site cannot move forward with work (either on a specific milestone, or in general). In a comment, they may elaborate if they are blocked on something out of their own control or if it is a problem that SM can help solve. The "Help Wanted" label sends a clear message that a site would like SM to reach out for assistance (why they need help can be elaborated in a comment) and the "Under Review" label can be used to mark that a site has requested feedback and progress is paused until feedback is received.
-
-Ultimately, any interaction with the issues, whether it is simply high level progress updates on the Progress Tracker issue, checking boxes in the milestone issues, utilizing labels, or a combination, is significantly better than no interaction.
+Ultimately, any interaction with the issues, whether it is simply high-level progress updates on the Progress Tracker issue, checking boxes in the milestone issues, utilizing labels, or a combination, is significantly better than no interaction at all.
