@@ -1,35 +1,31 @@
 # CHoRUS Bridge2AI Standards Module
 
-## Checklist/Progress Tracking/ Discussions Framework
+## Progress Tracking for Standards Module
 
 ### Purpose
-The CHoRUS Bridge2AI Standards Module is designed to offer a comprehensive platform for efficient project management and communication. 
-Our framework enables you to:
-* Organize tasks with a structured **to-do list** for sites.
-* Create a **workspace** where sites can monitor their progress, keep notes, and reach out to the Standards Module (SM) for assistance.
-* Equip the SM with tools for overseeing the progress and challenges of multiple sites at once.
+This framework provides contributing sites an easy way to report progress in standardizing their data contributions to Bridge2AI.
+
+This framework provides a **workspace** where sites can manually track their progress, keep notes, and reach out to the Standards Module (SM) for assistance. It also equips the SM with tools for overseeing the progress and challenges of multiple sites at once. 
   
 ### Overview
 This framework solves three problems for the SM and the Bridge2AI contributing sites:
-1) **Task guidance**: SM seeks to provide sites with a detailed checklist of tasks involved in the ETL development, use of OHDSI tools, and concept mapping necessary to contribute data to CHoRUS Bridge2AI.
+1) **Major milestones**: SM seeks to provide sites with a list of major milestones involved in the ETL development, use of OHDSI tools, and concept mapping necessary to standardize data for contribution to CHoRUS Bridge2AI.
 2) **Progress monitoring**: SM needs to understand the overall and individual status of sites' progress in order to better tailor support to the entire group and specific sites.
 3) **Discussion platform**: SM wants to host a discussion board or forum where sites can post questions or present topics for discussion with other sites and SM simultaneously.
 
 To address these challenges, the SM introduces the following solutions:
-1) **Detailed checklists**: The SM provides detailed checklists to guide sites through the entire process of transforming source data into an OMOP CDM database. These checklists are designed to clarify the core procedures of:
-    * Developing an OMOP ETL and setting up the necessary computational infrastructure
-    * Implementing the OHDSI toolstack to extract standardized quality and characterization information, and then sharing this information with the SM
-    * Selecting and mapping a subset of relevant source concepts to the OMOP Vocabulary
+1) **Major milestones**: The SM provides a high-level checklist of general ETL tasks to guide sites' reporting throughout the process.
 2) **Progress tracking**: SM makes sites' checklists accessible to understand their OMOP transformation progress and challenges. This visibility enables tailored support for each site and content addressing common issues.
 3) **Discussion forum integration**: The framework integrates with GitHub Discussions, offering a platform for sites to post questions and receive answers from SM or other sites. This integration connects discussions to issues in the Progress Tracker or Checklist and allows the creation of new topics from posted questions.
 
+> _Please note:_ The major milestones are meant to mirror the _general_ standardization process at a _high level_ in order to guide structured progress reporting. They are _not_ meant to provide a detailed set of tasks needed to complete an OMOP ETL.
+
 ### Site Instructions
 This framework uses a progress tracking system categorized into two main categories, each containing issues attached to each site's name:
-1) **Milestone issues** (**Complete ETL**, **Results Sharing**, **Flowsheets**): these issues come with detailed checklists for essential steps in the Bridge2AI data submission process. Each issue is connected to a single milestone with a due date and a progress percentage display.
+1) **Milestone issues** (**Complete ETL**, **Results Sharing**, **Flowsheets**): these issues come with high-level checklists for general steps involved with the Bridge2AI data standardization process. Each issue is connected to a single milestone with a due date and a progress percentage display.
 2) **Progress Tracker issue**: this single issue serves as the central hub for tracking a site's progress:
     * Serves as a landing page for each site.
-    * Includes a site profile and high-level to-do list.
-    * Offers links to the GitHub Discussions page and the three milestone issues.
+    * Includes a site profile, links to the GitHub Discussions page, and lists the three milestone issues.
     * Is associated with a project that tracks specific progress attributes (e.g., data submission date, Achilles work status, etc.).
 
 ### Engagement and Benefits
@@ -45,4 +41,4 @@ Here's how to get the most from the framework:
     
 Using these labels in conjunction with comments helps the SM understand a site's current situation and support needs.
 
-Ultimately, any interaction with the issues, whether it is simply high-level progress updates on the Progress Tracker issue, checking boxes in the milestone issues, utilizing labels, or a combination, is significantly better than no interaction at all.
+Ultimately, any interaction with the issues, whether it is simply progress updates via comments on the Progress Tracker issue, checking boxes in the milestone issues, utilizing labels, or a combination of these methods, provides useful feedback to SM on where sites are in their standardization process.
