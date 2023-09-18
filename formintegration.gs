@@ -132,6 +132,9 @@ function yesnocheckbox(txtbase, txtsub) {
   } else {
     var checkboxout = "- [ ] " +  txtbase
   }
+  if (txtsub.match("I don't know / Not applicable") == "I don't know / Not applicable") {
+    checkboxout = "- [*UNKNOWN OR N/A*] " + txtbase
+  }
   return checkboxout
 }
 
@@ -172,8 +175,10 @@ function onFormSubmit(e) {
               e.values[3] + "\n\n" + 
               "### Site Classification\n\n" +
               e.values[4] + "\n\n" +
-              "### Data Classification Type?\n\n" +
-              dct_checklist + "\n\n" +
+              "### Progress on data investigation & harmonization of:\n\n" +
+              yesnocheckbox("Structured EHR Data", e.values[52]) + "\n" +
+              yesnocheckbox("Semi-Structured Flowsheet Data", e.values[51]) + "\n" +
+              yesnocheckbox("Imaging and Waveform Data", e.values[53]) + "\n\n" +
               "### Mapping Overview:\n\n" + 
               "| Mapping Prioritization | Unmappable Codes | Mapping Metadata |\n" +
               "|---|---|---|\n" +
@@ -447,14 +452,169 @@ function onFormSubmit(e) {
         "contentType": "application/json",
         "payload": JSON.stringify(payload_update)
     };
-    Logger.log(loop_field)
-    Logger.log(options_query)
     var response_update = UrlFetchApp.fetch("https://api.github.com/graphql", options_query);
     Logger.log(response_update)
     
   }
 
+  // General Discussion Questions
+
+  var disc_gen_check = e.values[58]
+  if (disc_gen_check.match("Yes") == "Yes") {
+    var disc_gen_body = "SITE: " + e.values[1] + "\n\n" + 
+                              "BODY: " + e.values[57]
+    var disc_gen_query = "mutation{"+
+                              " addDiscussionComment("+
+                              " input: {"+
+                              "   discussionId: \"D_kwDOJ63xKM4AVd97\""+
+                              "   body: \""+ disc_gen_body + "\"" + 
+                              "   }" + 
+                              " )" + 
+                              "{ clientMutationId } }"
+    var payload_gen_etl = {
+      "query": disc_gen_query
+      };
+
+      var options_query = {
+          "method": "POST",
+          "headers": {
+              "authorization": "token "+token,
+              "Accept": "application/vnd.github.v3+json",
+          },
+          "contentType": "application/json",
+          "payload": JSON.stringify(payload_gen_etl)
+      };
+      var response_update = UrlFetchApp.fetch("https://api.github.com/graphql", options_query);
+      Logger.log(response_update)
+  }
+
+  // EHR Discussion Questions
+
+  var disc_etl_check = e.values[60]
+  if (disc_etl_check.match("Yes") == "Yes") {
+    var disc_etl_body = "SITE: " + e.values[1] + "\n\n" + 
+                              "BODY: " + e.values[59]
+    var disc_etl_query = "mutation{"+
+                              " addDiscussionComment("+
+                              " input: {"+
+                              "   discussionId: \"D_kwDOJ63xKM4AVdUp\""+
+                              "   body: \""+ disc_etl_body + "\"" + 
+                              "   }" + 
+                              " )" + 
+                              "{ clientMutationId } }"
+    var payload_disc_etl = {
+      "query": disc_etl_query
+      };
+
+      var options_query = {
+          "method": "POST",
+          "headers": {
+              "authorization": "token "+token,
+              "Accept": "application/vnd.github.v3+json",
+          },
+          "contentType": "application/json",
+          "payload": JSON.stringify(payload_disc_etl)
+      };
+      var response_update = UrlFetchApp.fetch("https://api.github.com/graphql", options_query);
+      Logger.log(response_update)
+  }
+
+  // Flowsheet Discussion Questions
+
+  var disc_flw_check = e.values[62]
+  if (disc_flw_check.match("Yes") == "Yes") {
+    var disc_flw_body = "SITE: " + e.values[1] + "\n\n" + 
+                              "BODY: " + e.values[61]
+    var disc_flw_query = "mutation{"+
+                              " addDiscussionComment("+
+                              " input: {"+
+                              "   discussionId: \"D_kwDOJ63xKM4AVdUt\""+
+                              "   body: \""+ disc_flw_body + "\"" + 
+                              "   }" + 
+                              " )" + 
+                              "{ clientMutationId } }"
+    var payload_flw_etl = {
+      "query": disc_flw_query
+      };
+
+      var options_query = {
+          "method": "POST",
+          "headers": {
+              "authorization": "token "+token,
+              "Accept": "application/vnd.github.v3+json",
+          },
+          "contentType": "application/json",
+          "payload": JSON.stringify(payload_flw_etl)
+      };
+      var response_update = UrlFetchApp.fetch("https://api.github.com/graphql", options_query);
+      Logger.log(response_update)
+  }
+
+  // Imaging/Waveform Discussion Questions
+
+  var disc_img_check = e.values[64]
+  if (disc_img_check.match("Yes") == "Yes") {
+    var disc_img_body = "SITE: " + e.values[1] + "\n\n" + 
+                              "BODY: " + e.values[63]
+    var disc_img_query = "mutation{"+
+                              " addDiscussionComment("+
+                              " input: {"+
+                              "   discussionId: \"D_kwDOJ63xKM4AVd90\""+
+                              "   body: \""+ disc_img_body + "\"" + 
+                              "   }" + 
+                              " )" + 
+                              "{ clientMutationId } }"
+    var payload_img_etl = {
+      "query": disc_img_query
+      };
+
+      var options_query = {
+          "method": "POST",
+          "headers": {
+              "authorization": "token "+token,
+              "Accept": "application/vnd.github.v3+json",
+          },
+          "contentType": "application/json",
+          "payload": JSON.stringify(payload_img_etl)
+      };
+      var response_update = UrlFetchApp.fetch("https://api.github.com/graphql", options_query);
+      Logger.log(response_update)
+  }
+
+  // Results Sharing Discussion Questions
+
+  var disc_res_check = e.values[66]
+  if (disc_res_check.match("Yes") == "Yes") {
+    var disc_res_body = "SITE: " + e.values[1] + "\n\n" + 
+                              "BODY: " + e.values[65]
+    var disc_res_query = "mutation{"+
+                              " addDiscussionComment("+
+                              " input: {"+
+                              "   discussionId: \"D_kwDOJ63xKM4AVeEM\""+
+                              "   body: \""+ disc_res_body + "\"" + 
+                              "   }" + 
+                              " )" + 
+                              "{ clientMutationId } }"
+    var payload_res_etl = {
+      "query": disc_res_query
+      };
+
+      var options_query = {
+          "method": "POST",
+          "headers": {
+              "authorization": "token "+token,
+              "Accept": "application/vnd.github.v3+json",
+          },
+          "contentType": "application/json",
+          "payload": JSON.stringify(payload_res_etl)
+      };
+      var response_update = UrlFetchApp.fetch("https://api.github.com/graphql", options_query);
+      Logger.log(response_update)
+  }
 }
+
+
+
 
 
 
