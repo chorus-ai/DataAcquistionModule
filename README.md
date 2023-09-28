@@ -1,6 +1,6 @@
 # CHoRUS Bridge2AI Standards Module
 
-## Progress Tracking for Standards Module
+## Progress Tracking for Data Acquistion Module
 
 ### Purpose
 This framework provides contributing sites an easy way to report progress in standardizing their data contributions to Bridge2AI.
