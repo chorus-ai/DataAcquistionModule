@@ -406,7 +406,6 @@ function onFormSubmit(e) {
       };
 
   Logger.log(payload_pt)
-  https://github.com/chorus-ai/DataAcquistionModule/issues/21
 
   var response_pt = UrlFetchApp.fetch("https://api.github.com/repos/chorus-ai/DataAcquistionModule/issues/" + getissue_pt, options_pt);
 
