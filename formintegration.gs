@@ -631,9 +631,10 @@ function onFormSubmit(e) {
     "Third Pull Date",
     "Fourth Pull Date"
   ]
-  var input_dates = [convertdate(e.values[34]),
-                    convertdate(e.values[35]),
-                    convertdate(e.values[37])]
+  var input_dates = [convertdate(e.values[8]),
+                    convertdate(e.values[15]),
+                    convertdate(e.values[22]),
+                    convertdate(e.values[29])]
 
   // Loop over status updates (columns in project)
 
