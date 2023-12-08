@@ -136,6 +136,7 @@ var gh_field_id = {
 
 var gh_status_options = {
   "Not Started": "98236657",
+  "Data Acquisition In Progress": "00a2bac7",
   "Data Acquired": "00a2bac7",
   "Data Transformed": "f187ab3d",
   "Data Uploaded": "67fa13c7"
