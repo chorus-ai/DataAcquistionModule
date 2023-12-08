@@ -110,10 +110,28 @@ var gh_field_id = {
   "Status": "PVTSSF_lADOB2W_hM4AWFPnzgOHL3Y",
   "First Pull Status": "PVTSSF_lADOB2W_hM4AWFPnzgOHL4A",
   "Second Pull Status": "PVTSSF_lADOB2W_hM4AWFPnzgOHL4E",
-  "Third/Final Pull Status": "PVTSSF_lADOB2W_hM4AWFPnzgOHL4I",
+  "Third Pull Status": "PVTSSF_lADOB2W_hM4AWFPnzgOHL4I",
+  "Fourth Pull Status": "PVTSSF_lADOB2W_hM4AWFPnzgPj7xg",
   "First Pull Date": "PVTF_lADOB2W_hM4AWFPnzgPIdWs",
   "Second Pull Date": "PVTF_lADOB2W_hM4AWFPnzgOHL4c",
-  "Third/Final Pull Date": "PVTF_lADOB2W_hM4AWFPnzgOHL4g"
+  "Third Pull Date": "PVTF_lADOB2W_hM4AWFPnzgOHL4g",
+  "Fourth Pull Date": "PVTF_lADOB2W_hM4AWFPnzgPj8Ac",
+  "Structured EHR -1st Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj8GY",
+  "Unstructured EHR - 1st Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj8PY",
+  "Waveforms - 1st Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj8VU",
+  "Images - 1st Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj8Zw",
+  "Structured EHR - 2nd Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj9JY",
+  "Unstructured EHR - 2nd Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj9T4",
+  "Waveforms - 2nd Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj9VY",
+  "Images - 2nd Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj9bs",
+  "Structured EHR - 3rd Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj9e4",
+  "Unstructured EHR - 3rd Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj9jg",
+  "Waveforms - 3rd Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj9pc",
+  "Images - 3rd Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj-QM",
+  "Structured EHR - 4th Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj9us",
+  "Unstructured EHR - 4th Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj9zQ",
+  "Waveforms - 4th Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj930",
+  "Images - 4th Pull": "PVTSSF_lADOB2W_hM4AWFPnzgPj98Q"
 }
 
 var gh_status_options = {
@@ -125,23 +143,162 @@ var gh_status_options = {
 
 var gh_fps_options = {
   "Not Started": "2208c5f2",
+  "Data Acquisition In Progress": "b906181f",
   "Data Acquired": "36bc40d2",
   "Data Transformed": "2c84b00e",
   "Data Uploaded": "d82df3c8"
 }
 
+var gh_fps_ehr_options = {
+  "Not Started": "05f966ea",
+  "Data Acquisition In Progress": "75023b2b",
+  "Data Acquired": "9911812d",
+  "Data Transformed": "f3a77be0",
+  "Data Uploaded": "1aee270c"
+}
+
+var gh_fps_uns_options = {
+  "Not Started": "5211a5a0",
+  "Data Acquisition In Progress": "e6eba82e",
+  "Data Acquired": "79f00e72",
+  "Data Transformed": "65e8d68c",
+  "Data Uploaded": "4c2a6caf"
+}
+
+var gh_fps_wav_options = {
+  "Not Started": "9a5164ff",
+  "Data Acquisition In Progress": "a94f9e39",
+  "Data Acquired": "7d5dbe1d",
+  "Data Transformed": "f0620d23",
+  "Data Uploaded": "5a9c8cd8"
+}
+
+var gh_fps_img_options = {
+  "Not Started": "4958ed7f",
+  "Data Acquisition In Progress": "91f60900",
+  "Data Acquired": "3c23b8e0",
+  "Data Transformed": "56e7b83c",
+  "Data Uploaded": "7e0739b7"
+}
+
 var gh_sps_options = {
   "Not Started": "bbeaffce",
+  "Data Acquisition In Progress": "c117a36e",
   "Data Acquired": "c117a36e",
   "Data Transformed": "c7f54e31",
   "Data Uploaded": "dea493b1"
 }
 
+var gh_sps_ehr_options = {
+  "Not Started": "bf153a8f",
+  "Data Acquisition In Progress": "44951019",
+  "Data Acquired": "3cac445f",
+  "Data Transformed": "19857989",
+  "Data Uploaded": "cb71f2cb"
+}
+
+var gh_sps_uns_options = {
+  "Not Started": "c4bdf78d",
+  "Data Acquisition In Progress": "2712a2a7",
+  "Data Acquired": "236e48d1",
+  "Data Transformed": "5b035a02",
+  "Data Uploaded": "7202a60e"
+}
+
+var gh_sps_wav_options = {
+  "Not Started": "8aa84bfa",
+  "Data Acquisition In Progress": "9f79c09b",
+  "Data Acquired": "64e5bee3",
+  "Data Transformed": "4b27e045",
+  "Data Uploaded": "158a830f"
+}
+
+var gh_sps_img_options = {
+  "Not Started": "499422a0",
+  "Data Acquisition In Progress": "60e2181b",
+  "Data Acquired": "d38dbac8",
+  "Data Transformed": "db964eca",
+  "Data Uploaded": "741b5035"
+}
+
 var gh_tps_options = {
   "Not Started": "8098a5df",
+  "Data Acquisition In Progress": "43acc310",
   "Data Acquired": "43acc310",
   "Data Transformed": "15705d31",
   "Data Uploaded": "f6935034"
+}
+
+var gh_tps_ehr_options = {
+  "Not Started": "b2986473",
+  "Data Acquisition In Progress": "764ecdde",
+  "Data Acquired": "c8671b60",
+  "Data Transformed": "734b5dde",
+  "Data Uploaded": "3e8fd575"
+}
+
+var gh_tps_uns_options = {
+  "Not Started": "f17e3d53",
+  "Data Acquisition In Progress": "9e466594",
+  "Data Acquired": "8d4f5b5c",
+  "Data Transformed": "7c4d484e",
+  "Data Uploaded": "18dca5ed"
+}
+
+var gh_tps_wav_options = {
+  "Not Started": "7f4bc0fa",
+  "Data Acquisition In Progress": "b179362d",
+  "Data Acquired": "71960dc3",
+  "Data Transformed": "e547e55b",
+  "Data Uploaded": "d479b4f8"
+}
+
+var gh_tps_img_options = {
+  "Not Started": "8783733e",
+  "Data Acquisition In Progress": "b9cb5b5e",
+  "Data Acquired": "c40afc35",
+  "Data Transformed": "9be23eb3",
+  "Data Uploaded": "b047fd5a"
+}
+
+var gh_4ps_options = {
+  "Not Started": "43737ba7",
+  "Data Acquisition In Progress": "5f969e99",
+  "Data Acquired": "cb6a6999",
+  "Data Transformed": "c8642873",
+  "Data Uploaded": "194a76bb"
+}
+
+var gh_4ps_ehr_options = {
+  "Not Started": "f1ef7f9f",
+  "Data Acquisition In Progress": "92da0282",
+  "Data Acquired": "c40be3ea",
+  "Data Transformed": "093d6614",
+  "Data Uploaded": "d85cf479"
+}
+
+var gh_4ps_uns_options = {
+  "Not Started": "5524f5e6",
+  "Data Acquisition In Progress": "735d18d0",
+  "Data Acquired": "b4f0f294",
+  "Data Transformed": "89cf8abd",
+  "Data Uploaded": "1eac9436"
+}
+
+var gh_4ps_wav_options = {
+  "Not Started": "2c17bf1a",
+  "Data Acquisition In Progress": "b36a2531",
+  "Data Acquired": "410a4563",
+  "Data Transformed": "8eab4f31",
+  "Data Uploaded": "56af7fab"
+}
+
+var gh_4ps_img_options = {
+  "Not Started": "e1db9e80",
+  "Data Acquisition In Progress": "9c438adc",
+  "Data Acquired": "0d7e37ed",
+  "Data Transformed": "120a49b9",
+  "Data Uploaded": "cc1fb91e"
 }
 
 function multifield2md(txtbase, txtsub) {
@@ -218,15 +375,15 @@ function onFormSubmit(e) {
               "### Able to modify time shifting algorithm? \n\n" +
               e.values[5] + "\n\n" +
               "### Cloud environment available? \n\n" +
-              e.values[6] + "\n\n" +
+              e.values[30] + "\n\n" +
               "### How many patients on first pull? \n\n" +
               e.values[7] + "\n\n" +
               "### Any data from NICU / PICU? \n\n" +
-              e.values[8] + "\n\n" +
+              e.values[31] + "\n\n" +
               "### How many NICU patients do you expect to upload? \n\n" +
-              e.values[9] + "\n\n" +
+              e.values[32] + "\n\n" +
               "### How many PICU patients do you expect to upload? \n\n" +
-              e.values[10] + "\n\n" +
+              e.values[33] + "\n\n" +
               "### Issue Links\n\n" +
               "  - https://github.com/chorus-ai/DataAcquistionModule/issues/" + getissue_wf + "\n" +
               "  - https://github.com/chorus-ai/DataAcquistionModule/issues/" + getissue_img + "\n" +
@@ -259,11 +416,11 @@ function onFormSubmit(e) {
   
   var body_etl = "*Updated via Google Form Submission: "  + e.values[0] + "*\n\n" +
       "### For how many patients have EHR data been extracted?\n" +
-      e.values[11] + "\n\n" +
+      e.values[35] + "\n\n" +
       "### Which types of EHR data have been extracted?\n" +
-      multifield2md(ehr_types, e.values[12]) + "\n\n" +
+      multifield2md(ehr_types, e.values[36]) + "\n\n" +
       "### Which EHR system are you using?\n" +
-      e.values[13] + "\n\n"
+      e.values[37] + "\n\n"
   
   var payload_etl = {
     "title": title_etl,
@@ -289,19 +446,19 @@ function onFormSubmit(e) {
   
   var body_flw = "*Updated via Google Form Submission: "  + e.values[0] + "*\n\n" +
       "### For how many patients have Unstructured EHR raw data been extracted?\n" +
-      e.values[14] + "\n\n" +
+      e.values[51] + "\n\n" +
       "### Which types of notes have been fully extracted?\n" +
-      multifield2md(uehr_types, e.values[15]) + "\n\n" +
+      multifield2md(uehr_types, e.values[52]) + "\n\n" +
       "### Have notes been de-identified or will they be de-identified??\n" +
-      e.values[16] + "\n\n" +
+      e.values[53] + "\n\n" +
       "### What type(s) of de-identification do you anticipate?\n" +
-      e.values[17] + "\n\n" +
+      e.values[54] + "\n\n" +
       "### Have you installed the OHNLP platform?\n" +
-      e.values[18] + "\n\n" +
+      e.values[55] + "\n\n" +
       "### Have you populated the OHNLP table?\n" +
-      e.values[19] + "\n\n" +
+      e.values[56] + "\n\n" +
       "### Have you uploaded the unstructured EHR data?\n" +
-      e.values[20] + "\n\n";
+      e.values[57] + "\n\n";
 
   
   var payload_flw = {
@@ -329,15 +486,15 @@ function onFormSubmit(e) {
   
   var body_res = "*Updated via Google Form Submission: "  + e.values[0] + "*\n\n" +
       "### For how many patients have raw waveform data been extracted? \n" +
-      e.values[29] + "\n\n" +
+      e.values[45] + "\n\n" +
       "### In what format are your raw waveforms recorded? \n" +
-      e.values[25] + "\n\n" +
+      e.values[46] + "\n\n" +
       "### Have the data been transformed to h5 format? \n" +
-      e.values[26] + "\n\n" +
+      e.values[47] + "\n\n" +
       "### Has the transformation been evaluated against the CHoRUS CCDEF format?  \n" +
-      e.values[27] + "\n\n" +
+      e.values[48] + "\n\n" +
       "### Have waveform data been uploaded?  \n" +
-      e.values[28] + "\n\n";
+      e.values[49] + "\n\n";
 
   
   var payload_res = {
@@ -365,15 +522,15 @@ function onFormSubmit(e) {
   
   var body_img = "*Updated via Google Form Submission: "  + e.values[0] + "*\n\n" +
       "### For how many patients have raw image data been extracted? \n" +
-      e.values[21] + "\n\n" +
+      e.values[39] + "\n\n" +
       "### Which types of images have been fully extrated? \n" +
-      e.values[22] + "\n\n" +
+      e.values[40] + "\n\n" +
       "### How have images been deidentified? \n" +
-      e.values[23] + "\n\n" +
+      e.values[41] + "\n\n" +
       "### Which deidentification software are you using? \n" +
-      e.values[30] + "\n\n" +
+      e.values[42] + "\n\n" +
       "### Have the images been uploaded? \n" +
-      e.values[24] + "\n\n";
+      e.values[43] + "\n\n";
 
   
   var payload_img = {
@@ -400,27 +557,80 @@ function onFormSubmit(e) {
 
   // Update statuses
 
-  var field_ids = ["Status",
+  var field_ids = ["Status", 
                   "First Pull Status",
                   "Second Pull Status",
-                  "Third/Final Pull Status"];
+                  "Third Pull Status",
+                  "Fourth Pull Status",
+                  "Structured EHR -1st Pull",
+                  "Unstructured EHR - 1st Pull",
+                  "Waveforms - 1st Pull",
+                  "Images - 1st Pull",
+                  "Structured EHR - 2nd Pull",
+                  "Unstructured EHR - 2nd Pull",
+                  "Waveforms - 2nd Pull",
+                  "Images - 2nd Pull",
+                  "Structured EHR - 3rd Pull",
+                  "Unstructured EHR - 3rd Pull",
+                  "Waveforms - 3rd Pull",
+                  "Images - 3rd Pull",
+                  "Structured EHR - 4th Pull",
+                  "Unstructured EHR - 4th Pull",
+                  "Waveforms - 4th Pull",
+                  "Images - 4th Pull"
+  ];
 
   var value_ids = [gh_status_options, 
                   gh_fps_options, 
                   gh_sps_options, 
-                  gh_tps_options];
+                  gh_tps_options,
+                  gh_4ps_options,
+                  gh_fps_ehr_options,
+                  gh_fps_uns_options,
+                  gh_fps_wav_options,
+                  gh_fps_img_options,
+                  gh_sps_ehr_options,
+                  gh_sps_uns_options,
+                  gh_sps_wav_options,
+                  gh_sps_img_options,
+                  gh_tps_ehr_options,
+                  gh_tps_uns_options,
+                  gh_tps_wav_options,
+                  gh_tps_img_options,
+                  gh_4ps_ehr_options,
+                  gh_4ps_uns_options,
+                  gh_4ps_wav_options,
+                  gh_4ps_img_options];
 
-  var input_values = [e.values[31],
-                      e.values[32],
-                      e.values[33],
-                      e.values[36]];
+  var input_values = [e.values[6],
+                      e.values[6], // Note overall status is first pull 
+                      e.values[9],
+                      e.values[16],
+                      e.values[23], // 4th pull
+                      e.values[34],
+                      e.values[50],
+                      e.values[44],
+                      e.values[38],
+                      e.values[11],
+                      e.values[14],
+                      e.values[13],
+                      e.values[12],
+                      e.values[18],
+                      e.values[21],
+                      e.values[20],
+                      e.values[19],
+                      e.values[25],
+                      e.values[28],
+                      e.values[27],
+                      e.values[26]];
 
   var get_gh_item = gh_item_id[e.values[2]];
 
   var date_ids = [
     "First Pull Date",
     "Second Pull Date",
-    "Third/Final Pull Date"
+    "Third Pull Date",
+    "Fourth Pull Date"
   ]
   var input_dates = [convertdate(e.values[34]),
                     convertdate(e.values[35]),
@@ -462,7 +672,9 @@ function onFormSubmit(e) {
     };
     Logger.log(loop_field)
     Logger.log(options_query)
-    var response_update = UrlFetchApp.fetch("https://api.github.com/graphql", options_query);
+    if (field_value_input.length > 1) {
+      var response_update = UrlFetchApp.fetch("https://api.github.com/graphql", options_query);
+    }
     Logger.log(response_update)
     
   }
@@ -498,11 +710,10 @@ function onFormSubmit(e) {
         "contentType": "application/json",
         "payload": JSON.stringify(payload_update)
     };
-    var response_update = UrlFetchApp.fetch("https://api.github.com/graphql", options_query);
+    if (field_value_input.length > 1) {
+      var response_update = UrlFetchApp.fetch("https://api.github.com/graphql", options_query);
+    }
     Logger.log(response_update)
     
   }
 }
-
-
-
